@@ -1,0 +1,549 @@
+.summer2024 {
+    --font_serif: 'Noto Serif JP', '游明朝', 'YuMincho', 'Hiragino Mincho ProN', 'HG明朝E', Meiryo, serif;
+    --font_sans: 'Noto Sans JP', '游ゴシック', YuGothic, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Helvetica, Meiryo, sans-serif;
+    --font_Castoro: 'Castoro', serif !important;
+    --weigth_extralight: 200;
+    --weight_regular: 400;
+    --main_yellow: #bda230;
+    --main_navy: #4f5f6c;
+}
+
+.summer2024 img{
+    width: 100%;
+}
+
+.summer2024 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.summer2024 .flex {
+    display: flex;
+}
+
+.summer2024 .sp {
+    display: none;
+}
+
+.summer2024 .tab {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    .summer2024 .tab {
+        display: block;
+    }
+
+    /*=====max-width:991px=====*/
+}
+
+@media screen and (max-width:767px) {
+    .summer2024 .pc {
+        display: none;
+    }
+
+    /*=====max-width:px=====*/
+}
+
+@media screen and (max-width:391px) {
+    .summer2024 .tab {
+        display: none;
+    }
+
+    /*=====max-width:391px=====*/
+}
+
+/* -------------------
+共通パーツ
+----------------------*/
+
+.summer2024 .plan_contents,
+.summer2024 .contact {
+    box-sizing: border-box;
+}
+
+.summer2024 li.notes_list {
+    position: relative;
+    margin-left: 1em;
+}
+
+.summer2024 li.notes_list::before {
+    content: "※";
+    position: absolute;
+    top: 0;
+    left: -1em;
+}
+
+/* h3 */
+.summer2024 .plan_h3 {
+    color: var(--main_navy);
+    font-size: 2.25rem;
+    font-family: var(--font_serif);
+    font-weight: var(--weight_extralight);
+    letter-spacing: 0.15em;
+}
+
+.summer2024 .plan_h3 .plan_index .line {
+    padding-bottom: 0.5rem;
+    line-height: 1;
+    font-family: var(--font_Castoro);
+    font-weight: var(--weight_regular);
+    border-bottom: solid 1px var(--main_navy);
+}
+
+.summer2024 .plan_h3 .plan_index .line span {
+    margin-left: 0.1em;
+    color: var(--main_yellow);
+    font-size: 5.6rem;
+}
+
+/* h4 紺背景文字 */
+.summer2024 .plan_h4 {
+    font-size: 1.25rem;
+    font-family: var(--font_serif);
+    font-weight: var(--weight_extralight);
+    line-height: 1;
+}
+
+.summer2024 .plan_h4 span {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    padding: 0.2em 0.5rem 0.3em;
+    color: #fff;
+    background-color: var(--main_navy);
+    font-size: 1.75rem;
+    font-weight: var(--weight_regular);
+}
+
+.summer2024 .plan_h4 span:last-of-type {
+    margin-bottom: 0;
+}
+
+.summer2024 .plan_h4 span .c_y {
+    margin-bottom: 0;
+    padding: 0;
+    color: #f1e25a;
+}
+
+.summer2024 .plan_contents .plan_desc {
+    margin-bottom: 1rem;
+    font-family: var(--font_sans);
+}
+
+.summer2024 .plan_contents .plan_desc_notes {
+    font-size: 0.75rem;
+    font-family: var(--font_sans);
+}
+
+/* ボタン */
+
+.summer2024 .plan_contents .campaign_btn,
+.summer2024 .contact .contact_btn {
+    font-family: var(--font_sans);
+}
+
+.summer2024 .plan_contents .campaign_btn a,
+.summer2024 .contact .contact_btn a {
+    position: relative;
+    max-width: 384px;
+    padding: 1.3rem 4.2rem;
+    color: #fff;
+}
+
+.summer2024 .plan_contents .campaign_btn a {
+    background-color: var(--main_yellow);
+}
+
+.summer2024 .contact .contact_btn a {
+    background-color: var(--main_navy);
+}
+
+.summer2024 .plan_contents .campaign_btn a::before,
+.summer2024 .contact .contact_btn a::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 1.5rem;
+    background-color: #fff;
+    top: calc(50% - 0.5px);
+    right: 1rem;
+}
+
+.summer2024 .plan_contents .campaign_btn a::after,
+.summer2024 .contact .contact_btn a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(1.5rem * 0.4);
+    background-color: #fff;
+    transform-origin: right top;
+    transform: rotate(45deg);
+    top: calc(50% - 0.5px);
+    right: 1rem;
+}
+
+/* ============================
+* h3:キャンペーンのお知らせ
+* ========================= */
+@media screen and (max-width:425px) {
+    .summer2024 .p-single-header .p-post-title {
+        text-align: left;
+    }
+
+    /*=====max-width:425px=====*/
+}
+
+/* ============================
+* MVエリア
+* ========================= */
+.summer2024 .container {
+    line-height: 1.88;
+}
+
+.summer2024 .mv {
+    margin-bottom: 72px;
+}
+
+.summer2024 .campaign_maintxt {
+    font-family: var(--font_serif);
+    font-weight: var(--weight_extralight);
+    text-align: center;
+}
+
+.summer2024 .campaign_maintxt p {
+    margin-bottom: 3rem;
+}
+
+.summer2024 .campaign_maintxt .applicant_period {
+    margin-bottom: 6.75rem;
+    font-family: var(--font_sans);
+    font-weight: var(--weight_regular);
+}
+
+.summer2024 .campaign_maintxt .applicant_period span {
+    display: block;
+    color: var(--main_yellow);
+    font-size: 2.25rem;
+    font-family: var(--font_serif);
+    font-weight: var(--weight_extralight);
+}
+
+@media screen and (max-width: 480px) {
+    .summer2024 .campaign_maintxt {
+        text-align: left;
+    }
+
+    .summer2024 .campaign_maintxt .applicant_period span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:391px) {
+    .summer2024 .campaign_maintxt .applicant_period span {
+        font-size: 1.8rem;
+    }
+
+    /*=====max-width:391px=====*/
+}
+
+/* ============================
+* section:plan1
+* ========================= */
+
+.summer2024 .plan_contents.plan1 {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: calc(103px + 1.3rem);
+    background-color: #edf1f7;
+}
+
+.summer2024 .plan_contents.plan1 .plan1_img.flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.summer2024 .plan1 .plan_h3 {
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.summer2024 .plan1 .plan_index {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.summer2024 .plan1 .plan_h4 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.summer2024 .plan1 .plan_h4 span:first-of-type {
+    padding-right: 0;
+}
+
+.summer2024 .plan1 .plan_h4 span:nth-of-type(2) {
+    padding-left: 0;
+}
+
+/* 改行位置調節 */
+
+@media screen and (max-width:440px) {
+    .summer2024 .sp {
+        display: block;
+    }
+
+    .summer2024 .plan1 .plan_h4 span:first-of-type {
+        padding-right: 0.5rem;
+    }
+
+    .summer2024 .plan1 .plan_h4 span:nth-of-type(2) {
+        padding-left: 0.5rem;
+    }
+
+    /*=====max-width:440px=====*/
+}
+
+.summer2024 .plan1 .wrap {
+    text-align: center;
+    /* max-width: 677px; */
+    /* margin: 0 auto calc(4rem + 1.3rem); */
+    margin: 0 auto calc(2rem + 1.3rem);
+    overflow: hidden;
+}
+
+.summer2024 .plan1 ul.plan_desc_notes {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    transform: translateX(calc(50% - 185px));
+}
+
+@media screen and (max-width:767px) {
+    .summer2024 .plan1 .wrap {
+        text-align: left;
+    }
+
+    .summer2024 .plan1 ul.plan_desc_notes {
+        transform: translateX(0);
+    }
+
+    /*=====max-width:767px=====*/
+}
+
+.summer2024 .plan1 .campaign_btn {
+    text-align: center;
+}
+
+/* ============================
+* section: plan2,3共通
+* ========================= */
+.summer2024 .plan2,
+.summer2024 .plan3 {
+    padding-top: 6rem;
+    padding-bottom: calc(6rem + 1.3rem);
+   border-bottom: 1px solid #ccc;
+}
+
+.summer2024 .plan2 .pc_img,
+.summer2024 .plan3 .pc_img {
+    width: 56.63%;
+}
+
+.summer2024 .sp_img,
+.summer2024 .sp_img {
+    display: none;
+}
+
+.summer2024 .plan2 .text,
+.summer2024 .plan3 .text {
+    width: 43.37%;
+}
+
+.summer2024 .plan2 .plan2_img,
+.summer2024 .plan3 .plan3_img {
+    /* margin-top: 3rem; */
+    margin: 3rem 0 0 0;
+}
+
+.summer2024 .plan2 .plan_h3 .plan_index,
+.summer2024 .plan3 .plan_h3 .plan_index {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:1199px) {
+
+    .summer2024 .plan2 .plan_h3 .tab,
+    .summer2024 .plan3 .plan_h3 .tab {
+        display: block;
+    }
+
+    /*=====max-width:1200px=====*/
+}
+
+@media screen and (max-width:991px) {
+
+    .summer2024 .plan2 .plan_h3 .tab,
+    .summer2024 .plan3 .plan_h3 .tab {
+        display: none;
+    }
+
+    /*=====max-width:991px=====*/
+}
+
+.summer2024 .plan2 .plan_h4,
+.summer2024 .plan3 .plan_h4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.summer2024 .plan2 .img_notes,
+.summer2024 .plan3 .img_notes {
+    margin-top: 0.5em;
+    font-size: 0.75rem;
+}
+
+.summer2024 .plan2 .wrap,
+.summer2024 .plan3 .wrap {
+    margin-bottom: calc(2.5rem + 1.3rem);
+}
+
+@media screen and (max-width: 991px) {
+    .summer2024 .pc_img {
+        display: none;
+    }
+
+    .summer2024 .plan2 .sp_img,
+    .summer2024 .plan3 .sp_img {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .summer2024 .plan2 .sp_img .flex,
+    .summer2024 .plan3 .sp_img .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summer2024 .plan2 .text .plan_h3,
+    .summer2024 .plan3 .text .plan_h3,
+    .summer2024 .plan2 .text .plan_h4,
+    .summer2024 .plan3 .text .plan_h4 {
+        text-align: center;
+    }
+
+    .summer2024 .plan2 .campaign_btn,
+    .summer2024 .plan3 .campaign_btn {
+        text-align: center;
+    }
+}
+
+/* ============================
+* section: plan2
+* ========================= */
+.summer2024 .plan2 .flex {
+    flex-direction: row;
+}
+
+.summer2024 .plan2 .text {
+    margin-left: 5%;
+}
+
+/* ============================
+* section:plan3
+* ========================= */
+
+.summer2024 .plan3 .flex {
+    flex-direction: row-reverse;
+}
+
+.summer2024 .plan3 .text {
+    margin-right: 5%;
+}
+
+.summer2024 .plan3 .plan_h3 .plan_index .line span {
+    vertical-align: bottom;
+}
+
+.summer2024 .plan3 .plan_h4 span:first-of-type {
+    margin-top: 0.8rem;
+}
+
+.summer2024 .plan3 .plan_h4 span .c_y {
+    margin-top: 0;
+}
+
+/* ============================
+* section:plan2,3 SP
+* ========================= */
+
+@media screen and (max-width:991px) {
+
+    .summer2024 .plan2 .pc_img,
+    .summer2024 .plan3 .pc_img {
+        width: 100%;
+    }
+
+    .summer2024 .plan2 .text,
+    .summer2024 .plan3 .text {
+        width: 100%;
+    }
+
+    .summer2024 .plan2 .text {
+        margin-left: 0%;
+    }
+
+    .summer2024 .plan3 .text {
+        margin-right: 0;
+    }
+
+    /*=====max-width:991px=====*/
+}
+
+
+/* ============================
+* section:contact
+* ========================= */
+
+.summer2024 .contact {
+    padding-top: 6rem;
+    font-family: var(--font_serif);
+}
+
+.summer2024 .contact p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.summer2024 .contact .tel_number {
+    margin-top: 2rem;
+    font-size: 3.25rem;
+    font-family: var(--font_Castoro);
+    line-height: 1;
+    pointer-events: none
+}
+
+.summer2024 .contact .tel_number a {
+    color: var(--main_yellow);
+}
+
+@media screen and (max-width:1199.98px) {
+    .summer2024 .contact .tel_number {
+        pointer-events: auto; 
+    }
+
+    /*=====max-width:1199.98px=====*/
+}
+
+.summer2024 .contact .reception_time {
+    font-size: 0.875rem;
+    font-family: var(--font_sans);
+}
+
+.summer2024 .contact .contact_btn {
+    margin-top: calc(2rem + 1.3rem);
+    margin-bottom: calc(103px + 1.3rem);
+}

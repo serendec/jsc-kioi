@@ -1,0 +1,562 @@
+/*
+既存クラスに影響がないようなクラスの付け方でお願いいたします。特定のidを付けてそのidを含めたセレクタにするなど。
+例
+#add-style1 .header { color:red;}
+*/
+
+
+/* feature ----------------------------------------------------*/
+#feature__ .lh-1_875{line-height: 1.875;}
+#feature__ .lh-1_75{line-height: 1.75;}
+#feature__ .lh-1_57{line-height: 1.57;}
+#feature__ .lh-1_5{line-height: 1.5;}
+#feature__ {letter-spacing: .06em;}
+
+#feature__ .access-logo a{
+	color: #333;
+}
+#feature__ .p-caret-right-arrow{
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+#feature__ .p-caret-right-arrow::before{
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: '\f0da';
+    color: #bda230;
+    font-weight: 900;
+}
+#feature__ .reason{
+  background-color: #f7f7f7;
+}
+#feature__ .reason-title{
+  border-bottom: 1px solid #ccc;
+  font-size: 1.375rem;
+  font-family: 'Noto Serif JP', '游明朝', 'YuMincho', 'Hiragino Mincho ProN', 'HG明朝E', Meiryo, serif;
+}
+#feature__ .reason-list{
+  font-size: 0.875rem;
+}
+#feature__ .bold{
+  font-weight: bold;
+}
+
+#feature__ #feature-access,
+#feature__ #feature-concept,
+#feature__ #feature-facility{
+  max-width: 720px;
+}
+
+@media (min-width: 576px){
+  #feature__ .reason-title br{
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #feature__ #feature-access,
+  #feature__ #feature-concept,
+  #feature__ #feature-facility{
+    max-width: 1500px;
+  }
+  #feature__ .access-block{
+    position: relative;
+    width: 100%;
+	}
+  #feature__ .access-image{
+    width: 57.5rem;
+  }
+	#feature__ .access-content{
+    width: 47%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+  #feature__ .access-btn_logo{
+    background-color: #fff;
+	}
+  #feature__ #feature-concept{
+    margin-top: 10rem;
+    position: relative;
+  }
+  #feature__ .concept-image{
+    width: 59.0625rem;
+		position: absolute;
+		top: -30px;
+    right: 0;
+  }
+  #feature__ .concept-content{
+    width: 54%;
+    position: absolute;
+		top: -30px;
+    left: 0;
+  }
+  #feature__ .concept-image-under{
+    width: 38.6875rem;
+		position: absolute;
+		top: 280px;
+    left: 0;
+  }
+  #feature__ .reason{
+    margin-top: 700px;
+  }
+  #feature__ .facility-h2-title{
+    padding-left: calc(5% + 3rem);
+  }
+  #feature__ .facility-block{
+    position: relative;
+    width: 100%;
+	}
+  #feature__ .facility-image{
+    width: 58rem;
+  }
+	#feature__ .facility-content{
+    width: 40%;
+		position: absolute;
+		top: 0;
+		left: 55%;
+	} 
+  #feature__ .facility-btn{
+    background-color: #fff;
+	} 
+}
+@media (min-width: 1200px) {
+	#feature__ .access-content{
+    width: 43%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+  #feature__ #feature-concept{
+    margin-top: 8rem;
+  }
+	#feature__ .facility-content{
+    width: 35%;
+		position: absolute;
+		top: 0;
+		left: 55%;
+	}  
+}
+@media (min-width: 1400px){
+  #feature__ .access-btn_logo{
+    background-color: transparent;
+	}
+  #feature__ .facility-btn{
+    background-color: transparent;
+	}  
+}
+
+
+/* guide ----------------------------------------------------*/
+#guide__ {letter-spacing: .06em;}
+
+#guide__ .bg-lightgray{
+    background-color: #f7f7f7;
+}
+#guide__ .step-heading .step-name{
+	display: block;
+	font-size: 0.875rem;
+  font-family: 'Noto Serif JP', '游明朝', 'YuMincho', 'Hiragino Mincho ProN', 'HG明朝E', Meiryo, serif;
+}
+#guide__ .step-heading a{
+	width: 100%;
+  height: 5rem;
+	position: relative;
+	color: #333;
+	font-weight: bold;
+}
+#guide__ .step-heading a:hover,#guide__ .step-heading a:visited,#guide__ .step-heading a:active{
+  color: #333;
+}
+#guide__ .step-heading a::before {
+ 	content: '';
+ 	position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1rem;
+  border: 1rem solid transparent;
+}
+#guide__ .step-heading--1 a{
+	background-color: #c8d7e3;
+}
+#guide__ .step-heading--1 a::before{
+	border-top: 1rem solid #c8d7e3;
+}
+#guide__ .step-heading--2 a{
+	background-color: #cdd9df;
+}
+#guide__ .step-heading--2 a::before{
+	border-top: 1rem solid #cdd9df;
+}
+#guide__ .step-heading--3 a{
+	background-color: #d2dbdc;
+}
+#guide__ .step-heading--3 a::before{
+	border-top: 1rem solid #d2dbdc;
+}
+#guide__ .step-heading--4 a{
+	background-color: #d8ddd7;
+}
+#guide__ .step-heading--4 a::before{
+	border-top: 1rem solid #d8ddd7;
+}
+#guide__ .step-heading--5 a{
+	background-color: #dee0d3;
+}
+#guide__ .step-heading--5 a::before{
+	border-top: 1rem solid #dee0d3;
+}
+#guide__ .step-heading--6 a{
+	background-color: #e3e2cf;
+}
+#guide__ .step-heading--6 a::before{
+	border-top: 1rem solid #e3e2cf;
+}
+#guide__ .step-heading--7 a{
+	background-color: #e8e4cb;
+}
+#guide__ .step-heading--7 a::before{
+	border-top: 1rem solid #e8e4cb;
+}
+#guide__ .step-heading--8 a{
+	background-color: #ede6c8;
+}
+#guide__ .step-heading a>span{
+	text-align: center;
+}
+#guide__ .step-heading a .small{
+	font-weight: normal;
+}
+#guide__ .p-frame__title{
+  background-color: #f7f7f7;
+}
+@media (min-width: 992px) {
+	#guide__ .step-heading a{
+	  width: 6rem;
+		height: 12rem;
+	}
+	#guide__ .step-heading a::before {
+	  top: 50%;
+	  left: 100%;
+    margin-left: 0;
+		margin-top: -1rem;
+    border: 1rem solid transparent;
+	}
+  #guide__ .step-heading--1 a::before{
+    border-left: 1rem solid #c8d7e3;
+  }
+  #guide__ .step-heading--2 a::before{
+    border-left: 1rem solid #cdd9df;
+  }
+  #guide__ .step-heading--3 a::before{
+    border-left: 1rem solid #d2dbdc;
+  }
+  #guide__ .step-heading--4 a::before{
+    border-left: 1rem solid #d8ddd7;
+  }
+  #guide__ .step-heading--5 a::before{
+    border-left: 1rem solid #dee0d3;
+  }
+  #guide__ .step-heading--6 a::before{
+    border-left: 1rem solid #e3e2cf;
+  }
+  #guide__ .step-heading--7 a::before{
+    border-left: 1rem solid #e8e4cb;
+  }
+	#guide__ .step-heading a>span{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+	}
+}
+@media (min-width: 1200px) {
+	#guide__ .step-heading a{
+	  width: 7.5rem;
+	}
+}
+#guide__ .step-h3-title{
+  font-family: 'Noto Serif JP', '游明朝', 'YuMincho', 'Hiragino Mincho ProN', 'HG明朝E', Meiryo, serif;
+  line-height: 1.0;
+}
+#guide__ .step-h3-title>span{
+  color: #bda230;
+  font-size: 1.2rem;
+}
+#guide__ .step-h3-title .step-number{
+  font-size: 2.5rem;
+  position: relative;
+  padding-right: .5rem;
+}
+#guide__ .step-h3-title .step-number:after{
+  position: absolute;
+  content: '';
+  left: 100%;
+  bottom: 0.6rem;
+  width: 2.5rem;
+  height: 1px;
+  background-color: #333;
+
+}
+#guide__ .step-h3-title h3{
+  padding-left: 3rem;
+  font-size: 1.2rem;  
+  font-weight: normal;
+  line-height: 1.0;
+}
+@media (min-width: 576px) {
+  #guide__ .step-h3-title>span{
+    font-size: 1.5rem;
+  }  
+  #guide__ .step-h3-title .step-number{
+    font-size: 3.125rem;
+  }
+  #guide__ .step-h3-title .step-number:after{
+    bottom: 0.75rem;
+  }
+  #guide__ .step-h3-title h3{
+    font-size: 1.5rem;
+  }
+}
+
+#guide__ .guide-tel a{
+  color: #bda230;
+  font-size: 2rem;
+  font-family: 'Castoro', serif;
+}
+@media (min-width: 992px) {
+  #guide__ .guide-tel a{
+    font-size: 3.5625rem;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+/* access ----------------------------------------------------*/
+#access__ .heading-text{
+  font-size: 1.75rem;
+  font-family: 'Noto Serif JP', '游明朝', 'YuMincho', 'Hiragino Mincho ProN', 'HG明朝E', Meiryo, serif;
+  border-bottom: 2px solid #bda230;
+  line-height: 2.0;
+}
+#access__ .map{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 44%;
+}
+#access__ .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#access__ .tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+#access__ .tab-label {
+  font-size: .5rem;
+  letter-spacing: 0;
+  border-bottom: 4px solid #e0e0e0;
+  order: -1;
+  flex: 1;
+}
+#access__ .tab-label .station-name{
+	font-size: .9rem;
+}
+#access__ .tab-content {
+  width: 100%;
+  display: none;
+}
+#access__ .tab-switch:checked+.tab-label {
+  border-bottom: 4px solid #bda230;
+  position: relative;
+}
+#access__ .tab-switch:checked+.tab-label::before{
+  content: '';
+  position: absolute;
+  top: calc(100% + .8rem);
+  left: 50%;
+  margin-left: -.5rem;
+  border: .5rem solid transparent;
+  border-top: .866025rem solid #bda230;  
+}
+#access__ .tab-switch:checked+.tab-label+.tab-content {
+  display: block;
+}
+#access__ .tab-switch {
+  display: none;
+}
+#access__ .tab-content-title{
+  font-size: 1.1rem;
+  color: #4e5f6c;
+}
+#access__ .tab-content-entitle{
+  font-size: 1rem;
+  color: #4e5f6c;
+}
+#access__ .tab-content .card{
+  border: 0;
+  border-radius: 0;
+}
+#access__ .tab-content .card-img-top{
+  border-radius: 0;
+}
+#access__ .tab-content .elevator,
+#access__ .tab-content .escalator{
+  background-color: #f0f0f0;
+}
+#access__ .tab-content .elevator .card,
+#access__ .tab-content .escalator .card{
+  background-color: transparent;
+}
+#access__ .tab-content .card-text{
+  font-size: .9rem;
+}
+#access__ .tab-content .bold{
+  font-weight: bold;
+}
+#access__ .tab-content .arrow,
+#access__ .tab-content .arrow-elevator,
+#access__ .tab-content .arrow-escalator{
+  position: relative;
+}
+#access__ .tab-content .arrow::before{
+  position: absolute;
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 100%;
+  left: 50%;
+  margin-left: -.75rem;
+  border-bottom: 2px solid #ff0000;
+  border-right: 2px solid #ff0000;
+  transform: rotate(45deg);
+}
+#access__ .tab-content .arrow-elevator::before,
+#access__ .tab-content .arrow-escalator::before{
+  position: absolute;
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  top: calc(100% + 1rem);
+  left: 50%;
+  margin-left: -.75rem;
+  transform: rotate(45deg);
+}
+#access__ .tab-content .arrow-elevator::before{
+  border-bottom: 2px solid #21ade5;
+  border-right: 2px solid #21ade5;
+}
+#access__ .tab-content .arrow-escalator::before{
+  border-bottom: 2px solid #4d4398;
+  border-right: 2px solid #4d4398;
+}
+#access__ .tab-content .nagatacho-note-number{
+  background-color: #ff0000;
+  color: white;
+}
+@media (min-width: 576px){
+  #access__ .heading-text{
+    line-height: 1.5;
+  }
+  #access__ .heading-text br{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #access__ .tab-label {
+    font-size: 1rem;
+    letter-spacing: .06em;
+  }
+  #access__ .tab-label .station-name{
+	font-size: 1rem;
+  }
+  #access__ .tab-content-title{
+    font-size: 1.5rem;
+  }
+  #access__ .tab-content-title > span{
+    font-size: 1rem;
+  }  
+  #access__ .tab-content .elevator{
+    position: relative;
+    top: -1rem;
+  }
+  #access__ .tab-content .elevator--nagatacho{
+    position: relative;
+    top: 0;
+    width: 48%;
+  }
+  #access__ .tab-content .escalator{
+    width: 48%;
+  } 
+  #access__ .tab-content .arrow::before,
+  #access__ .tab-content .arrow-elevator::before,
+  #access__ .tab-content .arrow-escalator::before{
+    width: 0;
+    height: 0;
+    border: 0;
+  }
+  #access__ .tab-content .arrow--md,
+  #access__ .tab-content .arrow-elevator--md,
+  #access__ .tab-content .arrow-escalator--md{
+    position: relative;
+  }
+  #access__ .tab-content .arrow--md::before,
+  #access__ .tab-content .arrow--md::after{
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .625rem;
+    border-top: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+  #access__ .tab-content .arrow--md::before{
+    top: 40%;
+    left: -4.2rem;
+  }
+  #access__ .tab-content .arrow--md::after{
+    top: 40%;
+    left: 102%;
+  }
+  #access__ .tab-content .arrow-elevator--md::before,
+  #access__ .tab-content .arrow-escalator--md::before{
+    position: absolute;
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    top: 40%;
+    left: calc(100% - .8rem);
+    margin: 0 .625rem;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+  #access__ .tab-content .arrow-elevator--md::before{
+    border-top: 2px solid #21ade5;
+    border-right: 2px solid #21ade5;
+  } 
+  #access__ .tab-content .arrow-escalator--md::before{
+    border-top: 2px solid #4d4398;
+    border-right: 2px solid #4d4398; 
+  } 
+}
+@media (min-width: 992px) {
+  #access__ .tab-label br {
+    display: none;
+  }  
+  #access__ .elevator-title br {
+    display: none;
+  }  
+  #access__ .escalator-title br {
+    display: none;
+  }  
+}
+#access__ .bg-lightgray{
+  background-color: #f7f7f7;
+}

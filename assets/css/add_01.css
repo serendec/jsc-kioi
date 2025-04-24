@@ -1,0 +1,333 @@
+/*
+既存クラスに影響がないようなクラスの付け方でお願いいたします。特定のidを付けてそのidを含めたセレクタにするなど。
+例
+#add-style1 .header { color:red;}
+*/
+/*
+#overview_06-02 .p-slider .p-slider__item img, #overview_06-03 .p-slider .p-slider__item img, #overview_06-04 .p-slider .p-slider__item img, #overview_06-05 .p-slider .p-slider__item img {
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+}
+*/
+body.overview .p-main #overview_09 .p-anchor li {
+    width: calc( 100% / 4 - 5px);
+}
+#overview_09 .p-caret-right-arrow{
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+#overview_09 .p-caret-right-arrow::before{
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: '\f0da';
+    color: #bda230;
+    font-weight: 900;
+}
+#overview_09 .border-gray{
+    border: 1px solid #c7c7c7;
+}
+#overview_09 .p-single-body .p-h4-20 {
+    font-size: 20px;
+}
+
+/* 2021.09.27追記 sitemap/index.html -------------------------------------- */
+#sitemap div.p-sitmemap {
+    margin: 30px 0;
+    line-height: 3em;
+}
+
+#sitemap div.p-sitmemap a {
+    color: #333;
+}
+
+#sitemap div.p-sitmemap a[target=_blank]::after {
+    content: '\f08e';
+    font-family: 'Font Awesome 5 Pro';
+    margin-left: 0.4em;
+}
+
+#sitemap ul.p-sitmemap-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#sitemap ul.p-sitmemap-list > li {
+    position: relative;
+    padding: 0px 0px 0px 1em;
+    font-weight: 500;
+}
+
+#sitemap ul.p-sitmemap-list > li::before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.3em solid transparent;
+    border-left: 0.4em solid #bda230;
+    content: "";
+}
+
+#sitemap ul.p-sitmemap-list__child {
+    list-style: none;
+}
+
+#sitemap ul.p-sitmemap-list__child > li::before {
+    padding-right: 0.4em;
+    content: "ー";
+}
+/*20221018追記*/
+.asterisk{
+  font-size: .875rem;
+}
+@media (max-width: 575.98px) {
+.asterisk{
+  font-size: 10px;
+}
+}
+@media (max-width: 1199.98px){
+  .p-h2 span {
+    font-size: 24px;
+}
+
+}
+/*20221021追記*/
+.p-prizm {
+ color: #FFF;
+}
+.p-prizmmodal{
+  background-image:url(/assets/img/prismmodalbg.jpg);
+  background-repeat: no-repeat;
+background-positon: center;
+    background-size: cover;
+  margin:0 auto;
+  text-align: center;
+max-width:700px;
+max-height: 500px;
+padding: 30px 30px 30px 30px;
+}
+.p-prizmtitle {
+  color: #FFF;
+  font-size:25px;
+font-family: 'Noto Serif JP', '游明朝', 'YuMincho', 'Hiragino Mincho ProN', 'HG明朝E', Meiryo, serif;
+    font-weight: normal;
+}
+.p-prizmmodal .p-modal__close span {
+background-color: #CECECE;
+}
+.p-prizmmodal p {
+    font-size: .875rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.p-prizmmodal .p-modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease
+}
+.p-prizmmodal .p-modal__close:hover {
+  opacity: .5
+}
+.p-prizmmodal .p-modal__close span {
+  display: inline-block
+}
+.p-prizmmodal .p-modal__close span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFF
+}
+.p-prizmmodal .p-modal__close span:nth-of-type(1) {
+  top: 0;
+  -webkit-transform: translateY(14px) rotate(-45deg);
+  -ms-transform: translateY(14px) rotate(-45deg);
+  transform: translateY(14px) rotate(-45deg)
+}
+.p-prizmmodal .p-modal__close span:nth-of-type(2) {
+  bottom: 0;
+  -webkit-transform: translateY(-14px) rotate(45deg);
+  -ms-transform: translateY(-14px) rotate(45deg);
+  transform: translateY(-14px) rotate(45deg)
+}
+@media (max-width: 1199.98px){
+.p-prizmtitle {
+    font-size: 20px;
+}
+.p-prizmmodal .p-title {
+    font-size: 1.625rem;
+    margin-bottom: 15px
+  }
+  
+  .p-modal .p-modal__close {
+    top: 15px;
+    right: 15px
+  }
+}
+
+.prismfrow_cover {
+  display: flex;
+}
+.prismarrow_box1{
+    position:relative;
+    width:110px;
+    height:80px;
+    background:#CCDAE5;
+    padding:10px;
+  text-align:center;
+  line-height:80px;
+    margin: 0 40px 40px;
+}
+.prismfrow_text{
+  display:inline-block;
+  vertical-align: middle;
+  line-height:normal;
+    color:#333333;
+    font-size:12px;
+  font-weight: 600;
+ 
+    
+}
+.prismarrow_box1:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(204, 218, 229, 0);
+    border-top-width:25px;
+    border-bottom-width:25px;
+    border-left-width:25px;
+    border-right-width:25px;
+    margin-top: -25px;
+    border-left-color:#CCDAE5;
+    left:100%;
+    top:50%;
+}
+.prismarrow_box4{
+    position:relative;
+    width:110px;
+    height:80px;
+    background:#CCDAE5;
+    padding:10px;
+  text-align:center;
+  line-height:80px;
+   margin-top: 0px;
+  margin-left: 20px;
+}
+/*20221109追記*/
+
+.prizm_lp {
+  width:90%;
+margin: 0 auto;
+}
+#guide__ .step-heading p{
+	width: 100%;
+  height: 5rem;
+	position: relative;
+	color: #333;
+	font-weight: bold;
+padding: 5px;
+}
+
+#guide__ .step-heading p::before {
+ 	content: '';
+ 	position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1rem;
+  border: 1rem solid transparent;
+}
+#guide__ .step-heading--1 p{
+	background-color: #c8d7e3;
+}
+#guide__ .step-heading--1 p::before{
+	border-top: 1rem solid #c8d7e3;
+}
+#guide__ .step-heading--3 p{
+	background-color: #d2dbdc;
+}
+#guide__ .step-heading--3 p::before{
+	border-top: 1rem solid #d2dbdc;
+}
+#guide__ .step-heading--5 p{
+	background-color: #dee0d3;
+}
+#guide__ .step-heading--5 p::before{
+	border-top: 1rem solid #dee0d3;
+}
+#guide__ .step-heading--8 p{
+	background-color: #ede6c8;
+}
+#guide__ .step-heading p>span{
+	text-align: center;
+}
+#guide__ .step-heading p .small{
+	font-weight: normal;
+}
+#guide__ .p-frame__title{
+  background-color: #f7f7f7;
+}
+@media (min-width: 992px) {
+	#guide__ .step-heading p{
+	  width: 10rem;
+		height: 12rem;
+	}
+	#guide__ .step-heading p::before {
+	  top: 50%;
+	  left: 100%;
+    margin-left: 0;
+		margin-top: -1rem;
+    border: 1rem solid transparent;
+	}
+  #guide__ .step-heading--1 p::before{
+    border-left: 1rem solid #c8d7e3;
+  }
+  #guide__ .step-heading--3 p::before{
+    border-left: 1rem solid #d2dbdc;
+  }
+  #guide__ .step-heading--5 p::before{
+    border-left: 1rem solid #dee0d3;
+  }
+	#guide__ .step-heading p>span{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+	}
+.prizm_lp {
+  width:75%;
+margin: 0 auto;
+}
+}
+@media (min-width: 1200px) {
+	#guide__ .step-heading p{
+	  width: 9rem;
+	}
+}
+/*20221114追記*/
+.prismmv_pc {
+  display: block !important;
+}
+.prismmv_sp {
+  display: none !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .prismmv_pc {
+    display: none !important;
+  }
+  .prismmv_sp {
+    display: block !important;
+  }
+}
